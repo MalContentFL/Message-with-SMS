@@ -1,0 +1,10 @@
+include partials/head
+div
+    div.container
+        h1 Helpdesk Chat
+        h3 Chat with any phone number!
+        form#form(action="/chat", method="get")
+            input.home-in(type="text", name="name", placeholder="name", required)
+            input.home-in(type="tel", name="num", placeholder="number", required)
+            button.home-in(type="submit")
+                label Start Chat
